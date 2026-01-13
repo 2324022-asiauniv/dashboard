@@ -383,7 +383,7 @@ def main():
             new_date = c1.date_input("日付", value=datetime.now())
             new_type = c2.selectbox("収支", ["支出", "収入"])
             new_cat = c3.selectbox("項目名", ["食費", "交通費", "交際費", "三井住友カード", "臨時収入"])
-            new_amt = st.number_input("金額", value=0, step=1000)
+            new_amt = st.number_input("金額", value=1000, step=1000)
             
             if st.form_submit_button("追加する"):
                 new_row = {'Date': pd.Timestamp(new_date), 'Type': new_type, 'Category': new_cat, 'Amount': new_amt, 'Status': '予定'}
