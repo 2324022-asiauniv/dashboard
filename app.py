@@ -329,12 +329,12 @@ def main():
                 
                 # シフト入力
                 c1, c2 = st.columns(2)
-                rate1 = c1.number_input("時給1 (基本)", value=1100, step=10, key="r1")
-                hours1 = c2.number_input("時間1", value=0.0, step=0.5, key="h1")
+                rate1 = c1.number_input("時給1 (基本)", value=1141, step=10, key="r1")
+                hours1 = c2.number_input("時間1", value=68.0, step=0.5, key="h1")
                 
                 c3, c4 = st.columns(2)
-                rate2 = c3.number_input("時給2 (深夜等)", value=1375, step=10, key="r2")
-                hours2 = c4.number_input("時間2", value=0.0, step=0.5, key="h2")
+                rate2 = c3.number_input("時給2 (深夜等)", value=100, step=10, key="r2")
+                hours2 = c4.number_input("時間2", value=18.0, step=0.5, key="h2")
 
                 allowance = st.number_input("その他手当", value=0, step=1000)
 
